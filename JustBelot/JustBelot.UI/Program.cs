@@ -12,20 +12,23 @@ namespace JustBelot.UI
     {
         static void Main(string[] args)
         {
-            HumanPlayer myplayer = new HumanPlayer(false);
-            Console.WriteLine(myplayer.IsLocal);
-            List<IPlayer> players = new List<IPlayer>();
-            players.Add(new HumanPlayer(true));
-            players.Add(new Player());
-            players.Add(new Player());
-            players.Add(new Player());
+            //HumanPlayer myplayer = new HumanPlayer(false);
+            //Console.WriteLine(myplayer.IsLocal);
+            //List<IPlayer> players = new List<IPlayer>();
+            //players.Add(new HumanPlayer(true));
+            //players.Add(new Player());
+            //players.Add(new Player());
+            //players.Add(new Player());
 
-            foreach ( var player in players) {
-                player.PlayCard();
-            }
+            //foreach ( var player in players) {
+            //    player.PlayCard();
+            //}
 
-            Card myCard = new Card(CardColor.Clubs, CardType.Ace);
-            Console.WriteLine(myCard.Type);
+            //Card myCard = new Card(CardColor.Clubs, CardType.Ace);
+            //Console.WriteLine(myCard.Type);
+
+            
+            
 
         }
     }
