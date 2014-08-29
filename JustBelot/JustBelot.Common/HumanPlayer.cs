@@ -10,17 +10,15 @@ namespace JustBelot.Common
     {
         private bool isLocal;
 
+        public bool IsLocal
+        {
+            get { return isLocal; }
+            set { isLocal = value; }
+        }
+
         public HumanPlayer(bool isLocal)
         {
             this.isLocal = isLocal; 
-        }
-
-        public bool IsLocal
-        {
-            get
-            {
-                return isLocal;
-            }
         }
 
         public string Name

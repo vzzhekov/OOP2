@@ -23,6 +23,10 @@ namespace JustBelot.UI
             foreach ( var player in players) {
                 player.PlayCard();
             }
+
+            Card myCard = new Card(CardColor.Clubs, CardType.Ace);
+            Console.WriteLine(myCard.Type);
+
         }
     }
 }
