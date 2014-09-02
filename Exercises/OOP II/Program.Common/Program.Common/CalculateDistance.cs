@@ -12,9 +12,10 @@ namespace Program.Common
 
         public static void Distance(Point3D pointA, Point3D pointB)
         {
-            string pointAInner = pointA.ToString();
-            string pointBInner = pointB.ToString();
-            Console.WriteLine(pointAInner[1]);
+            string[] pointAInner = pointA.ToString().Split(new char[] {','});
+           
+            string[] pointBInner = pointB.ToString().Split(new char[] {','});
+            Console.WriteLine(pointAInner[0]);
             int x1 = (Convert.ToInt32(pointAInner[0])) - 48;
             int x2 = (Convert.ToInt32(pointBInner[0])) - 48;
             int y1 = (Convert.ToInt32(pointAInner[1])) - 48;

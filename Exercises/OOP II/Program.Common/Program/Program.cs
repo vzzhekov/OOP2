@@ -13,8 +13,8 @@ namespace Program
         {
 
             
-            Point3D a = new Point3D(1,40,3);
-            Point3D b = new Point3D(3, 4, 1);
+            Point3D a = new Point3D(-177,40,3);
+            Point3D b = new Point3D(222, 54, 8);
             CalculateDistance.Distance(a,b);
             
         }
