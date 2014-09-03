@@ -38,6 +38,9 @@ namespace Program
                 Console.WriteLine(item.ToString());
             }
 
+            var student = new { Name = "Vilian Zhekov", University = "London School of Economics" };
+            Console.WriteLine(student);
+
 
 
         }
