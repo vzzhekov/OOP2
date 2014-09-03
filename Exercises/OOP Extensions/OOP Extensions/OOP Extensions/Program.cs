@@ -11,9 +11,17 @@ namespace OOP_Extensions
     {
         static void Main()
         {
-            string s = "Hello Extension Methods";
-            int i = s.WordCount();
-            Console.WriteLine(i);
+            int[] numbers = { 5, 4, 1, 3, 9, 8 };
+
+            var querySmallNumbers = from num in numbers
+                                    where num < 5
+                                    select num;
+
+            foreach (var num in querySmallNumbers)
+            {
+                Console.WriteLine("{0}", num);
+            }
+           
 
         }
     }
