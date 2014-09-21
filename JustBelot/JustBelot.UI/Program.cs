@@ -12,22 +12,18 @@ namespace JustBelot.UI
     {
         static void Main(string[] args)
         {
-            //HumanPlayer myplayer = new HumanPlayer(false);
-            //Console.WriteLine(myplayer.IsLocal);
-            //List<IPlayer> players = new List<IPlayer>();
-            //players.Add(new HumanPlayer(true));
-            //players.Add(new Player());
-            //players.Add(new Player());
-            //players.Add(new Player());
+            IPlayer player = new HumanPlayer();
+            IPlayer bot1 = new DummyPlayer();
+            IPlayer bot2 = new DummyPlayer();
+            IPlayer bot3 = new DummyPlayer();
+            GameManager game = new GameManager(player,bot1,bot2,bot3);
+            Console.WriteLine(game[PlayerPosition.West].Name);
+            Console.WriteLine(game[PlayerPosition.South].Name);
 
-            //foreach ( var player in players) {
-            //    player.PlayCard();
-            //}
-
-            //Card myCard = new Card(CardColor.Clubs, CardType.Ace);
-            //Console.WriteLine(myCard.Type);
-
-            
+            Card card = new Card(CardColor.Spades, CardType.Ace);
+            Console.WriteLine(card);
+            card++;
+            Console.WriteLine(card);
             
 
         }

@@ -7,7 +7,7 @@ using JustBelot.Common;
 
 namespace JustBelot.VilianAI
 {
-    public class Player : IPlayer
+    public class DummyPlayer : IPlayer
     {
         public string Name
         {

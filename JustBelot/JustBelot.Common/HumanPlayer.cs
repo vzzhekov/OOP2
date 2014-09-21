@@ -16,9 +16,9 @@ namespace JustBelot.Common
             set { isLocal = value; }
         }
 
-        public HumanPlayer(bool isLocal)
+        public HumanPlayer()
         {
-            this.isLocal = isLocal; 
+             
         }
 
         public string Name
